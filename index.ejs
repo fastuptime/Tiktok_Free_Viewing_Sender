@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Fast Tiktok Free Views Sending</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+</head>
+
+<body>
+    <style>
+        body {
+            background-image: url("https://wallpapers.com/images/hd/tiktok-logo-patterns-apgm6olmczc7cxq7.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .usernameContainer {
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        h3 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            font-size: 40px;
+            color: white;
+        }
+
+        ul {
+            list-style: none;
+            bottom: 40px;
+            text-align: center;
+
+        }
+
+        li {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 20px;
+            color: rgb(255, 255, 255);
+            margin-bottom: 10px;
+        }
+    </style>
+    <div style="position: absolute; top: 0; right: 0; margin: 10px; font-size: 30px;">
+        <a href="/getcoins" target="_blank" style="color: white;"><span style="color: white;">
+                <%= user.coin %>
+            </span><i class="fas fa-coins" style="color: gold;"></i></a>
+    </div>
+    <div class="usernameContainer">
+        <h3>Super Fast Tiktok Free Views Sending</h3>
+        <ul>
+            <li>Thanks to this service, you can send unlimited views</li>
+            <li>
+                <%= buyCoin %> coins for every <%= sendCount %> views
+            </li>
+            <li>You earn <%= adsCoin %> coins every time you pass an advert</li>
+            <li>Click on the coin icon to switch to adverts</li>
+            <li>This is a free service please do not abuse it.</li>
+        </ul>
+        <form action="/send" method="post">
+            <div class="form-group">
+                <input type="url" class="form-control" id="videourl" name="videourl" placeholder="Enter Video URL"
+                    style="font-size: 20px;">
+            </div>
+            <center>
+                <button type="submit" class="btn"
+                    style="font-size: 20px; background-color: #2B2D30; border-color: #2B2D30; color: white; border-radius: 24px;">Send
+                    Free Views</button>
+            </center>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        let urlParams = new URLSearchParams(window.location.search);
+        let msg = urlParams.get('message');
+        if (urlParams.get('error') == 'true') {
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: `${msg}`,
+                footer: 'Tüm Hakları Saklıdır.',
+                confirmButtonText: 'Tamam',
+                timer: 5000
+            }).then((result) => {
+                window.location.href = window.location.href.split('?')[0];
+            });
+        }
+        if (urlParams.get('success') == 'true') {
+            Swal.fire({
+                icon: 'success',
+                title: 'Başarılı',
+                text: `${msg}`,
+                footer: 'Tüm Hakları Saklıdır.',
+                confirmButtonText: 'Anlaşıldı',
+                timer: 3000
+            }).then((result) => {
+                window.location.href = window.location.href.split('?')[0];
+            });
+        }
+    </script>
+</body>
+
+</html>
