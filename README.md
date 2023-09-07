@@ -33,7 +33,7 @@ Tiktok free viewing sender / Tiktok ücretsiz görüntüleme gönderme scripti
 
 ## ⛳Tech Stack ⛳
 
-**🗄️Server:** Node, Express, axios, wiodb, cookie parser, body parser
+**🗄️Server:** Node, Express, axios, wiodb, cookie parser, body-parser
 
 ---
 - ✨ [For Support](https://github.com/sponsors/fastuptime) <br>
