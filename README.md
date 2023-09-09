@@ -1,6 +1,9 @@
 # Tiktok_Free_Viewing_Sender
 Tiktok free viewing sender / Tiktok ücretsiz görüntüleme gönderme scripti
 
+# Tüm Sorunları çözülmüş v2 Hali NOSQL
+https://github.com/fastuptime/Tiktok_Free_Viewing_Sender_v2
+
 # 🎈 Images 🎈
 
 ![image](https://github.com/fastuptime/Tiktok_Free_Viewing_Sender/assets/63351166/2fef1b8c-e369-4286-979f-76aecf0a96a6)
