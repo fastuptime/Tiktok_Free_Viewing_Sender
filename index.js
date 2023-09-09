@@ -32,6 +32,7 @@ app.use((req, res, next) => {
 
 app.get('/', (req, res) => {
     let user = db.has(req.cookies.userID) ? db.fetch(req.cookies.userID) : null;
+    if (!user) return res.send('<script>alert("Hesabınız oluşturuluyor lütfen bekleyiniz.");window.location.href="/";</script>');
     res.render('index.ejs', {
         user
     });
